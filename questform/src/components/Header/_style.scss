@@ -1,0 +1,35 @@
+.app-header {
+  padding: $default-horizontal-spacing;
+  margin-bottom: 10px;
+  height: $top-bar-height;
+  background-color: $menu-bg-color;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.3);
+  &-content div:first-child {
+    height: $top-bar-height;
+  }
+  &-content,
+  &-content div:first-child,
+  &-user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .divisor {
+    background-color: $divisor-color;
+    height: 22px;
+    width: 1px;
+    margin-right: 10px;
+    color: $transparent;
+  }
+  .img-profile {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    border: $userimg-border;
+  }
+}
+.img-menu {
+  width: 20px;
+  height: 14px;
+}

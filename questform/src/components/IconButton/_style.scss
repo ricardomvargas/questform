@@ -1,0 +1,18 @@
+.icon-button {
+  width: 20px;
+  height: 20px;
+  &-light {
+    fill: $blue-white;
+  }
+  &-dark {
+    fill: $dark-gray;
+  }
+  &-red {
+    fill: $light-red;
+  }
+  &-cancel {
+    width: 10px;
+    height: 15px;
+    margin-bottom: 5px;
+  }
+}

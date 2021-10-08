@@ -1,0 +1,153 @@
+%flexItens {
+  padding: 7px 5px;
+  display: flex;
+  align-items: center;
+}
+%input-search {
+  padding: 0;
+  margin: 0;
+  width: 0;
+  margin-bottom: -3px;
+  margin-right: -20px;
+  border: none;
+  border-bottom: solid 1px;
+  background-color: $blue-gray;
+  color: $blue-white;
+  &:focus {
+    outline: none;
+  }
+}
+.data-table {
+  &-content {
+    border: solid 1px $gray4;
+    border-top: 0;
+  }
+  &-content-no-title {
+    border: solid 1px $gray4;
+  }
+  .data-item {
+    @extend %flexItens;
+    background-color: $white;
+    .item-status {
+      margin: 0 8px 0 5px;
+    }
+    .more-options {
+      margin: 0 5px 0 8px;
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+      ul {
+        position: absolute;
+        top: 15px;
+        right: -7px;
+        z-index: 9999;
+        border-width: 1px 1px 0 1px;
+        border-color: $more-options-dark;
+        border-style: solid;
+        border-radius: 5px;
+        li {
+          border-bottom: 1px solid $more-options-dark;
+          background-color: $more-options-light;
+          font-family: $roboto-condensed;
+          padding: 5px 8px;
+          a {
+            display: block;
+            width: 100%;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+        li:first-child {
+          border-radius: 5px 5px 0px 0px;
+        }
+        li:last-child {
+          border-radius: 0px 0px 5px 5px;
+        }
+        li:hover {
+          background-color: $more-options-dark;
+          color: $white;
+        }
+      }
+      ul:hover {
+        background-color: $more-options-dark;
+      }
+      .options {
+        &-visible-false {
+          display: none;
+        }
+        &-visible-true {
+          display: block;
+        }
+      }
+    }
+    .item-text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      // #TODO: REVISAR ISSO PENSANDO NA RESPONSIVIDADE
+      .sub-text {
+        font-size: $small-text;
+        margin-top: 2px;
+      }
+    }
+    &:hover {
+      background-color: $gray3;
+    }
+  }
+  .data-item:nth-child(2n) {
+    background-color: $gray2;
+    &:hover {
+      background-color: $gray3;
+    }
+  }
+  &-footer {
+    margin-top: 15px;
+    ul {
+      display: flex;
+      justify-content: center;
+      .current-page {
+        background-color: $gray3;
+      }
+      li button {
+        padding: 5px 8px;
+        border: solid 1px $gray4;
+        background-color: $white;
+        margin: 0 5px;
+      }
+      li button:hover {
+        background-color: $gray3;
+      }
+    }
+  }
+  .input-search-visible {
+    @extend %input-search;
+    transition: width 0.5s;
+    width: 170px;
+  }
+  .input-search-hide {
+    @extend %input-search;
+    transition: width 0.5s;
+    width: 0;
+  }
+}
+/*******************
+  BREAKPOINTS
+*******************/
+@media (min-width: 600px) {
+  .data-table .input-search-visible {
+    width: 300px;
+  }
+  .data-table-footer {
+    ul li button {
+      margin: 0 3px;
+    }
+  }
+}
+@media (min-width: 801px) {
+  .data-table li .sub-text {
+    // REVISAR ISSO PENSANDO NA RESPONSIVIDADE
+    font-size: $small-text-lager;
+  }
+}

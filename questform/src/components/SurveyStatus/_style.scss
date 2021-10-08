@@ -1,0 +1,37 @@
+%survey-status {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  display: block;
+}
+.online {
+  @extend %survey-status;
+  background-image: radial-gradient(
+    $lighter-green,
+    $light-green2,
+    $dark-green2
+  );
+}
+.offline {
+  @extend %survey-status;
+  background-image: radial-gradient($gray3, $gray5, $gray6);
+}
+.canceled {
+  @extend %survey-status;
+  background-image: radial-gradient($lighter-red, $light-red, $dark-red);
+}
+.publishing {
+  @extend %survey-status;
+  background-image: radial-gradient(
+    $lighter-orange,
+    $light-orange,
+    $dark-orange
+  );
+}
+.finished {
+  @extend %survey-status;
+  background-image: radial-gradient($pink, $light-purple, $dark-purple);
+}
+.shadow {
+  filter: drop-shadow(0 0 0.85rem #000);
+}

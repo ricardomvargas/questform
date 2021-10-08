@@ -1,0 +1,93 @@
+/*******************
+  FONT'S
+*******************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;700&display=swap');
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$noto-sans: 'Noto Sans', sans-serif;
+/*******************
+  COLOR'S
+*******************/
+$transparent: transparent;
+$white: #fff;
+$blue-white: #f0f8ff;
+$gray1: #f5f5f5;
+$gray2: #eaeaea;
+$gray3: #dddddd;
+$gray4: #cacbcc;
+$gray5: #b7b7b7;
+$gray6: #878787;
+$dark-gray: #4c4c4c;
+$blue-gray: #708090;
+$blue-gray-dark: #535d66;
+$light-blue: #6495ed;
+$dark-blue: #3271e7;
+$lighter-green: #0aefe4;
+$light-green: #00fa9a;
+$dark-green: #05c779;
+$light-green2: #04a5a0;
+$dark-green2: #008b8b;
+$lighter-orange: #f7cd97;
+$light-orange: #ffa500;
+$dark-orange: #dd8803;
+$lighter-red: #f4b19c;
+$light-red: #ff0000;
+$dark-red: #cc0000;
+$pink: #ffc7e8;
+$light-purple: #c44dbc;
+$dark-purple: #8a3781;
+/*******************
+  SIZES
+*******************/
+$small-text: 0.8em;
+$small-text-lager: 0.85em;
+$regular-text: 0.9em;
+$regular-text-large: 1em;
+$big-text: 1.1em;
+$big-text-large: 1.2em;
+$top-bar-height: 40px;
+$default-horizontal-spacing: 0px 10px;
+$default-vertical-spacing: 10px 0px;
+/*******************
+  APP VARIABLES
+*******************/
+// main
+$app-bg-color: $gray1;
+$text-color: $dark-gray;
+// menu
+$menu-bg-color: $blue-white;
+$menuitem-bg-mouse-over: $blue-gray-dark;
+$menuitem-text-color: $blue-white;
+// top-bar
+$topbar-bg-color: $blue-white;
+$userimg-border: solid 1px $blue-gray;
+$divisor-color: $blue-gray;
+// site map
+$sitemap-alt-text-color: $blue-white;
+// content
+$content-border: solid 1px $gray4;
+$input-border: solid 1px $gray4;
+$input-required-text-color: $gray4;
+// tables
+$table-header-bg-color: $blue-gray;
+$table-border: solid 1px $gray4;
+$table-title-text-color: $white;
+$table-line-default-bg-color: $white;
+$table-line-alt-bg-color: $gray2;
+// more-options
+$more-options-light: $gray5;
+$more-options-dark: $dark-gray;
+// buttons
+$btn-text-color: $white;
+$btn-blue: $light-blue;
+$btn-blue-hove: $dark-blue;
+$btn-green: $light-green;
+$btn-green-hove: $dark-green;
+$btn-green2: $light-green2;
+$btn-green2-hove: $dark-green2;
+$btn-orange: $light-orange;
+$btn-orange-hove: $dark-orange;
+$btn-red: $light-red;
+$btn-red-hove: $dark-red;
+$btn-purple: $light-purple;
+$btn-purple-hove: $dark-purple;

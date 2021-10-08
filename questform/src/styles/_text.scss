@@ -1,0 +1,41 @@
+/*******************
+  TEXT'S
+*******************/
+.roboto {
+  font-family: $roboto;
+  /* Exemplo de nesting:
+   * O '&' representa a classe pai, adicionando o '-bold' no final por exemplo, vai
+   * gerar o texto: 'roboto-bold'. No html caso eu queira colocar um texto em negrito,
+   * preciso adicionar duas classes: className="roboto roboto-bold". */
+  &-light {
+    font-weight: 100;
+  }
+  &-regular {
+    font-weight: 300;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+}
+.roboto-condensed {
+  font-family: $roboto-condensed;
+  &-light {
+    font-weight: 300;
+  }
+  &-regular {
+    font-weight: 400;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+}
+.noto-sans {
+  font-family: $noto-sans;
+  &-regular {
+    font-weight: 400;
+  }
+  &-bold {
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+}

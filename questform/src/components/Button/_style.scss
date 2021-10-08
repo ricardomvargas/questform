@@ -1,0 +1,79 @@
+/*******************
+  BUTTON
+*******************/
+%btn-default {
+  font-size: $regular-text-large;
+  width: 80px;
+  border: solid 3px;
+  color: $white;
+  padding: 6px;
+  &:hover,
+  &:focus {
+    padding: 6px;
+    border: solid 3px;
+  }
+}
+
+/* Exemplo de herança.
+ * Para fazer um grupo de estilo ser pode ser herdado basta adicionar o '%' no começo
+ * do nome. Para importar esse estilo dentro de outro deve-se usar o '@extend'.
+ * O grupo de estilos declardo com o '%' não pode ser usado nas tags, so funciona
+ * para ser herdado.
+ * */
+.btn {
+  &-save {
+    @extend %btn-default;
+    background-color: $light-green2;
+    border-color: $dark-green2;
+    &:hover,
+    &:focus {
+      background-color: $dark-green2;
+      border-color: $dark-green2;
+    }
+  }
+  &-publish {
+    @extend %btn-default;
+    background-color: $light-orange;
+    border-color: $dark-orange;
+    &:hover,
+    &:focus {
+      background-color: $dark-orange;
+      border-color: $dark-orange;
+    }
+  }
+  &-cancel {
+    @extend %btn-default;
+    background-color: $light-red;
+    border-color: $dark-red;
+    &:hover,
+    &:focus {
+      background-color: $dark-red;
+      border-color: $dark-red;
+    }
+  }
+  &-finish {
+    @extend %btn-default;
+    background-color: $light-purple;
+    border-color: $dark-purple;
+    &:hover,
+    &:focus {
+      background-color: $dark-purple;
+      border-color: $dark-purple;
+    }
+  }
+  &-login {
+    @extend %btn-default;
+    background-color: $light-blue;
+    border-color: $dark-blue;
+    &:hover,
+    &:focus {
+      background-color: $dark-blue;
+      border-color: $dark-blue;
+    }
+  }
+}
+@media (min-width: 801px) {
+  %btn-default {
+    font-size: $regular-text;
+  }
+}

@@ -1,0 +1,35 @@
+.cards-section {
+  margin-bottom: 15px;
+  div:first-child {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      padding-top: 5px;
+    }
+    a,
+    svg {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  div:last-child {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  div:last-child div {
+    margin-bottom: 10px;
+  }
+}
+.last-surveys-section {
+  h4 {
+    font-weight: bold;
+    margin: 0 0 5px 5px;
+  }
+}
+@media (min-width: 801px) {
+  .cards-section div:first-child h2 {
+    padding-top: 10px;
+  }
+}

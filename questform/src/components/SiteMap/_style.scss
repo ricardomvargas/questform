@@ -1,0 +1,17 @@
+#site-map {
+  ul {
+    display: flex;
+    margin-bottom: 10px;
+    li {
+      margin-left: 5px;
+      span {
+        padding-left: 5px;
+      }
+    }
+    li:hover,
+    .pageTitle {
+      color: $blue-gray;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+%menu-item-options-default {
+  background-color: $blue-white;
+  border: solid 2px $blue-gray;
+  border-radius: 20px;
+  position: absolute;
+  width: 45px;
+  padding: 2px;
+  top: 32px;
+}
+.lang-menu {
+  .img-flag {
+    width: 20px;
+    height: 20px;
+  }
+  .img-options {
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+  }
+  .display-langs {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  &-options {
+    @extend %menu-item-options-default;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-options-hide {
+    @extend %menu-item-options-default;
+    display: none;
+  }
+}

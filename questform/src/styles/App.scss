@@ -1,0 +1,182 @@
+@import 'reset';
+@import 'variables';
+@import 'text';
+/*******************
+  MAIN STYLES
+*******************/
+body,
+html {
+  height: 100%;
+  background-color: $app-bg-color;
+  min-width: 320px;
+}
+.app {
+  color: $text-color;
+  font-family: $roboto;
+  font-size: $regular-text-large;
+  &-body-content {
+    padding: 8px;
+    border: solid 1px $gray4;
+    background-color: $white;
+  }
+  &-body-content-no-margin {
+    margin: $default-horizontal-spacing;
+  }
+}
+h1,
+h2 {
+  font-size: $big-text-large;
+}
+h3,
+h4 {
+  font-size: $big-text;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.show-item-inline {
+  display: inline;
+}
+.show-item-block {
+  display: block;
+}
+.hide-item {
+  display: none;
+}
+
+.site-map {
+  padding: 5px 0px;
+}
+%defaultHeader {
+  padding: 7px 5px;
+  display: flex;
+  align-items: center;
+  background-color: $blue-gray;
+  color: $white;
+  justify-content: space-between;
+  h3 {
+    padding-left: 10px;
+  }
+}
+.page-header {
+  @extend %defaultHeader;
+  padding: 7px 5px;
+  &-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    a {
+      margin-left: 8px;
+    }
+  }
+}
+form {
+  fieldset {
+    margin: 10px 0;
+  }
+  label {
+    font-size: $big-text;
+    display: flex;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  input,
+  textarea {
+    font-size: $regular-text-large;
+    display: flex;
+    width: 100%;
+    padding: 5px 2px;
+    font-family: $noto-sans;
+    border: solid 2px $gray4;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: solid 2px $gray6;
+  }
+  .input-has-erros {
+    border: solid 2px $light-red;
+  }
+  .button-block {
+    padding: 15px 0px;
+    button,
+    span {
+      display: block;
+      margin: 0 auto;
+    }
+    span {
+      margin-top: 10px;
+      text-align: center;
+      color: $light-red;
+      font-weight: bold;
+    }
+  }
+}
+/*******************
+  COMPONENTS STYLES
+*******************/
+@import '../components/Header/style';
+@import '../components/Button/style';
+@import '../components/LanguagePicker/style';
+@import '../components/Menu/style';
+@import '../components/DashboardCard/style';
+@import '../components/DataTable/style';
+@import '../components/IconButton/style';
+@import '../components/SurveyStatus/style';
+@import '../components/SiteMap/style';
+/*******************
+  PAGE STYLES
+*******************/
+@import '../pages/dashboard/style';
+/*******************
+  BREAKPOINTS
+*******************/
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480 x 320 phones (Android) */
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800 x 480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .site-map,
+  .app-body-content-no-margin,
+  .app-header-content {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .app {
+    font-size: $regular-text;
+  }
+  h1,
+  h2 {
+    font-size: $big-text;
+  }
+  h3,
+  h4 {
+    font-size: $regular-text-large;
+  }
+  form {
+    label {
+      font-size: $regular-text-large;
+    }
+    input,
+    textarea {
+      font-size: $regular-text;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

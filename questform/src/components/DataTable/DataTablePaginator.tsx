@@ -3,7 +3,7 @@ import { useIntl } from 'react-intl';
 
 import { TDataTablePaginator } from '../../types/components/DataTablePaginator';
 
-import { getIntegerDivision } from '../../util/';
+import { getIntegerDivision } from '../../util/util';
 
 const DataTablePaginator = ({
   totalItens,
@@ -98,6 +98,7 @@ const DataTablePaginator = ({
   };
 
   const buildPageButton = () =>
+    /** #TODO: Add key in the <li> */
     pageSection.map((page) => (
       <li style={{ marginRight: '5px' }}>
         <button

@@ -35,6 +35,7 @@ const Menu = ({ menuIcon, menuVisible, onMenuClick, appLinks }: TMenu) => {
       <section>
         <ul className='menu-links'>
           {menuVisible &&
+            /** #TODO: Add key in the <li> */
             appLinks.map((appLink, index: number) => (
               <li
                 onMouseOver={() => handleMouseOver(`img${index}`)}

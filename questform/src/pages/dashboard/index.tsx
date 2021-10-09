@@ -10,7 +10,7 @@ import DashBoardCard from '../../components/DashboardCard/DashboardCard';
 import IconButton from '../../components/IconButton/IconButton';
 
 import { getLastSurveys } from '../../http/surveys';
-import { getStatus } from '../../util';
+import { getStatus } from '../../util/util';
 import { surveysEditRoute } from '../../util/routes';
 
 import {
@@ -21,6 +21,7 @@ import {
   ARROW_LEFT,
   ARROW_RIGHT,
 } from '../../util/constants';
+import { BuildDataTableLine } from '../../util/util';
 
 const moreOptions = [
   {
@@ -39,19 +40,11 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       const resp = await getLastSurveys();
-      let surveys: ListItem[] = [];
       const { list, total } = (resp?.data as TServerResponseList) || {};
-
-      list.map((survey: TSurvey) => {
-        return surveys.push({
-          id: survey.idSurvey,
-          mainContent: survey.idSurvey + ' - ' + survey.title,
-          subContent: `${intl.formatMessage({ id: 'surveyTotalQuestions' })}: ${
-            survey.totalQuestions
-          }`,
-          status: getStatus(survey.idSurveyStatus),
-        });
-      });
+      const surveys: ListItem[] =
+        total > 0
+          ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl))
+          : [];
 
       setSurveys({ list: surveys, totalItens: total });
     };

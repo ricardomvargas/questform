@@ -8,6 +8,7 @@ const SiteMap = ({ options }: TSiteMap) => {
   return (
     <nav id='site-map'>
       <ul>
+        {/** #TODO: Add key in the <li> without the index */}
         {options.map((option: SiteMapOption, index) => (
           <li key={option.title + index}>
             {option?.route ? (

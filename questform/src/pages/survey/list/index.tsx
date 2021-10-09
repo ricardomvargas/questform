@@ -9,12 +9,13 @@ import DataTable from '../../../components/DataTable/DataTable';
 import SiteMap from '../../../components/SiteMap/SiteMap';
 
 import { getAllSurveys } from '../../../http/surveys';
-import { getStatus } from '../../../util';
+
 import {
   dashboardRoute,
   surveysEditRoute,
   surveysNewRoute,
 } from '../../../util/routes';
+import { BuildDataTableLine } from '../../../util/util';
 
 const moreOptions = [
   {
@@ -61,19 +62,11 @@ const SurveyList = () => {
   useEffect(() => {
     const fetchData = async () => {
       const resp = await getAllSurveys((currentSurveysPage - 1).toString());
-      let surveys: ListItem[] = [];
       const { list, total } = (resp?.data as TServerResponseList) || {};
-
-      list.map((survey: TSurvey) => {
-        return surveys.push({
-          id: survey.idSurvey,
-          mainContent: survey.idSurvey + ' - ' + survey.title,
-          subContent: `${intl.formatMessage({ id: 'surveyTotalQuestions' })}: ${
-            survey.totalQuestions
-          }`,
-          status: getStatus(survey.idSurveyStatus),
-        });
-      });
+      const surveys: ListItem[] =
+        total > 0
+          ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl))
+          : [];
 
       setSurveys({ list: surveys, totalItens: total });
     };

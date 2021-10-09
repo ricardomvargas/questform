@@ -1,3 +1,6 @@
+import { IntlShape } from 'react-intl';
+import { TSurvey } from '../types/Entities/Survey';
+
 export const getStatus = (codigo: number) => {
   switch (codigo) {
     case 1:
@@ -23,3 +26,12 @@ export const getIntegerDivision = (value: number, divider: number) => {
   const newResult = parseInt(result.toString());
   return newResult + 1;
 };
+
+export const BuildDataTableLine = (survey: TSurvey, intl: IntlShape) => ({
+  id: survey.idSurvey,
+  mainContent: survey.idSurvey + ' - ' + survey.title,
+  subContent: `${intl.formatMessage({
+    id: 'surveyTotalQuestions',
+  })}: ${survey.totalQuestions}`,
+  status: getStatus(survey.idSurveyStatus),
+});

@@ -1,12 +1,14 @@
 import React from 'react';
 
-const SiteMap = ({ options }: ComponentsProps.SiteMap) => {
+import { TSiteMap, SiteMapOption } from '../../types/components/SiteMap';
+
+const SiteMap = ({ options }: TSiteMap) => {
   const total = options.length;
 
   return (
     <nav id='site-map'>
       <ul>
-        {options.map((option: ComponentsProps.SiteMapOption, index) => (
+        {options.map((option: SiteMapOption, index) => (
           <li key={option.title + index}>
             {option?.route ? (
               <>

@@ -2,7 +2,7 @@ import 'jsdom-global/register';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
-import SiteMap from '../../components/SiteMap';
+import SiteMap from '../../components/SiteMap/SiteMap';
 
 import '../../setupTest';
 

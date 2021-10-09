@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
-import DataTable from '../../components/DataTable';
-import DashBoardCard from '../../components/DashboardCard';
-import IconButton from '../../components/IconButton';
+import { TSurvey } from '../../types/Entities/Survey';
+import { TServerResponseList } from '../../types/Http';
+import { ListItem } from '../../types/components/DataTable';
+
+import DataTable from '../../components/DataTable/DataTable';
+import DashBoardCard from '../../components/DashboardCard/DashboardCard';
+import IconButton from '../../components/IconButton/IconButton';
 
 import { getLastSurveys } from '../../http/surveys';
 import { getStatus } from '../../util';
@@ -18,27 +22,27 @@ import {
   ARROW_RIGHT,
 } from '../../util/constants';
 
+const moreOptions = [
+  {
+    title: 'View',
+    url: surveysEditRoute,
+  },
+];
+
 const Dashboard = () => {
   const intl = useIntl();
   const [surveys, setSurveys] = useState<{
-    list: ComponentsProps.ListItem[];
+    list: ListItem[];
     totalItens: number;
   }>({ list: [], totalItens: 0 });
-
-  const moreOptions = [
-    {
-      title: 'View',
-      url: surveysEditRoute,
-    },
-  ];
 
   useEffect(() => {
     const fetchData = async () => {
       const resp = await getLastSurveys();
-      let surveys: ComponentsProps.ListItem[] = [];
-      const { list, total } = (resp?.data as Entities.ServerResponseList) || {};
+      let surveys: ListItem[] = [];
+      const { list, total } = (resp?.data as TServerResponseList) || {};
 
-      list.map((survey: Entities.Survey) => {
+      list.map((survey: TSurvey) => {
         return surveys.push({
           id: survey.idSurvey,
           mainContent: survey.idSurvey + ' - ' + survey.title,

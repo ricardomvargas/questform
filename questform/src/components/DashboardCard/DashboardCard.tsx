@@ -1,11 +1,8 @@
 import React from 'react';
 
-const DashboardCard = ({
-  skin,
-  title,
-  content,
-  url,
-}: ComponentsProps.DashboardCard) => {
+import { TDashboardCard } from '../../types/components/DashboardCard';
+
+const DashboardCard = ({ skin, title, content, url }: TDashboardCard) => {
   const buildLink = (url: string, content: string) => (
     <a href={url} title={content}>
       {content}
@@ -14,7 +11,7 @@ const DashboardCard = ({
 
   return (
     <div className={`${skin}-card roboto-condensed`}>
-      <h4 className="roboto-condensed-bold">
+      <h4 className='roboto-condensed-bold'>
         {url ? buildLink(url, title) : title}
       </h4>
       <p>{url ? buildLink(url, content) : content}</p>

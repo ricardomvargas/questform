@@ -1,10 +1,10 @@
 import React, { useEffect /*, useState*/ } from 'react';
 import { useIntl } from 'react-intl';
 
-import Button from '../../../components/Button';
-import IconButton from '../../../components/IconButton';
-import SurveyStatus from '../../../components/SurveyStatus';
-import SiteMap from '../../../components/SiteMap/';
+import Button from '../../../components/Button/Button';
+import IconButton from '../../../components/IconButton/IconButton';
+import SurveyStatus from '../../../components/SurveyStatus/SurveyStatus';
+import SiteMap from '../../../components/SiteMap/SiteMap';
 
 //import { getSurveyById } from '../../../http/surveys';
 import { dashboardRoute, surveysListRoute } from '../../../util/routes';

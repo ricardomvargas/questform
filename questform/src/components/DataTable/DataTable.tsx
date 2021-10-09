@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useIntl } from 'react-intl';
 
+import { TDataTable } from '../../types/components/DataTable';
+
 import DataTablePaginator from './DataTablePaginator';
-import IconButton from '../IconButton';
-import SurveyStatus from '../SurveyStatus';
+import IconButton from '../IconButton/IconButton';
+import SurveyStatus from '../SurveyStatus/SurveyStatus';
 
 import {
   CLOSE,
@@ -30,7 +32,7 @@ const DataTable = ({
   deleteAction,
   itensPerPage,
   sectionSize,
-}: ComponentsProps.DataTable) => {
+}: TDataTable) => {
   const DEFAULT_ITENS_PER_PAGE = 10;
   const DEFAULT_SECTION_SIZE = 3;
   const [searchTextVisible, setSearchTextVisible] = useState(false);
@@ -50,7 +52,7 @@ const DataTable = ({
   const handlerClickOutside = (e: MouseEvent) => {
     if (
       !moreOptionsRef?.current?.find((ref: HTMLDivElement) =>
-        ref?.contains(e?.target as Node),
+        ref?.contains(e?.target as Node)
       )
     ) {
       setOpenedOptions({ id: 0, display: false });
@@ -112,17 +114,17 @@ const DataTable = ({
     hideTitle ? 'data-table-content-no-title' : 'data-table-content';
 
   return (
-    <div className="data-table">
+    <div className='data-table'>
       {hideTitle ? null : (
-        <div className="page-header">
+        <div className='page-header'>
           <h1>{listTitle}</h1>
-          <div className="page-header-actions">
+          <div className='page-header-actions'>
             {searchAction ? (
               <>
                 <input
-                  id="data-table-search"
-                  type="text"
-                  name="data-table-search"
+                  id='data-table-search'
+                  type='text'
+                  name='data-table-search'
                   onChange={handleSearchTextAction}
                   value={searchText}
                   disabled={!searchTextVisible}
@@ -183,31 +185,31 @@ const DataTable = ({
       <ul className={buildContentStyle()}>
         {dataList?.length > 0 ? (
           dataList.map((data, index) => (
-            <li className="data-item" key={data.id}>
+            <li className='data-item' key={data.id}>
               {data?.status ? (
-                <div className="item-status">
+                <div className='item-status'>
                   <SurveyStatus status={data.status} />
                 </div>
               ) : null}
-              <div className="item-text">
+              <div className='item-text'>
                 <span>{data.mainContent}</span>
                 {data?.subContent ? (
-                  <span className="sub-text">{data?.subContent}</span>
+                  <span className='sub-text'>{data?.subContent}</span>
                 ) : null}
               </div>
               {hideMoreOptions === undefined || hideMoreOptions === false ? (
                 deleteAction || moreOptions ? (
                   <div
-                    className="more-options"
+                    className='more-options'
                     ref={(el) =>
                       (moreOptionsRef.current[index] = el as HTMLDivElement)
                     }
                   >
                     {moreOptions ? (
-                      <div className="options">
+                      <div className='options'>
                         <IconButton
-                          buttonType="moreOptionsHorizontal"
-                          color="dark"
+                          buttonType='moreOptionsHorizontal'
+                          color='dark'
                           onClickAction={() => handleMoreOptionsAction(data.id)}
                         />
                         {data.id === openedOptions.id &&
@@ -228,7 +230,7 @@ const DataTable = ({
                                     <a
                                       href={option.url.replace(
                                         ':id',
-                                        data.id as unknown as string,
+                                        data.id as unknown as string
                                       )}
                                     >
                                       {option.title}

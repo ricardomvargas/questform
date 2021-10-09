@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-const SurveyStatus = ({
-  status,
-  displayShadow,
-}: ComponentsProps.SurveyStatus) => {
+import { TSurveyStatus } from '../../types/components/SurveyStatus';
+
+const SurveyStatus = ({ status, displayShadow }: TSurveyStatus) => {
   const buildClassName = () => {
     const className = status ?? 'offline';
     if (displayShadow) return className + ' shadow';

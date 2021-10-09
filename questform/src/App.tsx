@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import LangContext from './context';
-
-import Header from './components/Header';
-import LanguagePicker from './components/LanguagePicker';
+import Header from './components/Header/Header';
+import LanguagePicker from './components/LanguagePicker/LanguagePicker';
 
 import DashBoard from './pages/dashboard/';
 import SurveyList from './pages/survey/list/';
 import Survey from './pages/survey/item/';
 import QuestionList from './pages/question/list';
 import Question from './pages/question/item';
+
+import LangContext from './context';
 
 import profileImg from './assets/images/me.jpg';
 import messages from './intl/messages';

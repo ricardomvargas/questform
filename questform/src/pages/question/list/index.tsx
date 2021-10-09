@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 
-import SiteMap from '../../../components/SiteMap/';
+import SiteMap from '../../../components/SiteMap/SiteMap';
 
 import { dashboardRoute } from '../../../util/routes';
 

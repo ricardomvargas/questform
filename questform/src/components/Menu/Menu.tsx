@@ -1,14 +1,11 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 
+import { TMenu } from '../../types/components/Menu';
+
 import arrowRight from '../../assets/images/arrow-right.png';
 
-const Menu = ({
-  menuIcon,
-  menuVisible,
-  onMenuClick,
-  appLinks,
-}: ComponentsProps.Menu) => {
+const Menu = ({ menuIcon, menuVisible, onMenuClick, appLinks }: TMenu) => {
   const intl = useIntl();
 
   const handleMouseOver = (id: string) => {

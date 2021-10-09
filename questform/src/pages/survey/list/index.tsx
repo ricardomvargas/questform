@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useIntl } from 'react-intl';
 
-import DataTable from '../../../components/DataTable';
-import SiteMap from '../../../components/SiteMap/';
+import { TSurvey } from '../../../types/Entities/Survey';
+import { TServerResponseList } from '../../../types/Http';
+import { ListItem } from '../../../types/components/DataTable';
+
+import DataTable from '../../../components/DataTable/DataTable';
+import SiteMap from '../../../components/SiteMap/SiteMap';
 
 import { getAllSurveys } from '../../../http/surveys';
 import { getStatus } from '../../../util';
@@ -12,31 +16,31 @@ import {
   surveysNewRoute,
 } from '../../../util/routes';
 
+const moreOptions = [
+  {
+    title: 'Edit',
+    url: surveysEditRoute,
+  },
+  {
+    title: 'View',
+    url: surveysEditRoute,
+  },
+  {
+    title: 'Custom',
+    url: '#',
+    onClick: (id: number) => {
+      console.log(`custom action clicked ${id}`);
+    },
+  },
+];
+
 const SurveyList = () => {
   const intl = useIntl();
   const [surveys, setSurveys] = useState<{
-    list: ComponentsProps.ListItem[];
+    list: ListItem[];
     totalItens: number;
   }>({ list: [], totalItens: 0 });
   const [currentSurveysPage, setCurrentSurveysPage] = useState(1);
-
-  const moreOptions = [
-    {
-      title: 'Edit',
-      url: surveysEditRoute,
-    },
-    {
-      title: 'View',
-      url: surveysEditRoute,
-    },
-    {
-      title: 'Custom',
-      url: '#',
-      onClick: (id: number) => {
-        console.log(`custom action clicked ${id}`);
-      },
-    },
-  ];
 
   const siteMapOptions = [
     {
@@ -57,10 +61,10 @@ const SurveyList = () => {
   useEffect(() => {
     const fetchData = async () => {
       const resp = await getAllSurveys((currentSurveysPage - 1).toString());
-      let surveys: ComponentsProps.ListItem[] = [];
-      const { list, total } = (resp?.data as Entities.ServerResponseList) || {};
+      let surveys: ListItem[] = [];
+      const { list, total } = (resp?.data as TServerResponseList) || {};
 
-      list.map((survey: Entities.Survey) => {
+      list.map((survey: TSurvey) => {
         return surveys.push({
           id: survey.idSurvey,
           mainContent: survey.idSurvey + ' - ' + survey.title,

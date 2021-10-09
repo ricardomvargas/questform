@@ -1,7 +1,8 @@
 import React /*, { useState }*/ from 'react';
 import { useIntl } from 'react-intl';
 
-import SiteMap from '../../../components/SiteMap/';
+import SiteMap from '../../../components/SiteMap/SiteMap';
+
 import { dashboardRoute, surveysListRoute } from '../../../util/routes';
 
 const Question = () => {

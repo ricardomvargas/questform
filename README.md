@@ -48,8 +48,8 @@ I'm studying many subjects of my interest and building small applications to tes
 
 ## Getting Started
 
-- Backend app: I recommend to use XAMPP (https://www.apachefriends.org/blog/news-article-61070.html) for publishing the PHP app and to use MySQL, is very easy installation. Just copy the questform-services and past into the XAMPP httpdocs folder.
-- Database: With XAMPP running, just go to localhost/phpmyadmin/ to get access to the PHPMyAdmin where you can have access to the MySQL. Add a new database with the name 'questform', and run the scritps in the 'database' folder
+- Backend app: I recommend to use XAMPP (https://www.apachefriends.org/blog/news-article-61070.html) for publishing the PHP app and to use MySQL, is very easy installation. Just copy the questform-services and past into the XAMPP 'htdocs' folder.
+- Database: With XAMPP running, just go to 'localhost/phpmyadmin/' to get access to the PHPMyAdmin where you can have access to the MySQL. Add a new database with the name 'questform', and run the scritps in the 'database' folder
 - Frontend app: Navigate to the questform folder and run: npm install. After installation, just run: npm run dev to start the app (you may need configure the backend endpoints according with you server configuration, to do so just check the '/src/http/enpoints.ts' file).
 
 ### Instalation

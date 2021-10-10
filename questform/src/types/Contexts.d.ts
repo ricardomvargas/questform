@@ -1,6 +1,4 @@
-declare namespace CONTEXTS {
-  interface LangContext {
-    appLang: string;
-    updateAppLang?: Function | undefined;
-  }
+export interface TLangContext {
+  appLang: string;
+  updateAppLang?: Function | undefined;
 }

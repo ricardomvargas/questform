@@ -10,7 +10,6 @@ import DashBoardCard from '../../components/DashboardCard/DashboardCard';
 import IconButton from '../../components/IconButton/IconButton';
 
 import { getLastSurveys } from '../../http/surveys';
-import { getStatus } from '../../util/util';
 import { surveysEditRoute } from '../../util/routes';
 
 import {
@@ -39,8 +38,9 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const resp = await getLastSurveys();
-      const { list, total } = (resp?.data as TServerResponseList) || {};
+      const surveyResponse = await getLastSurveys();
+      const responseData = await surveyResponse.json();
+      const { list, total } = (responseData as TServerResponseList) || {};
       const surveys: ListItem[] =
         total > 0
           ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl))

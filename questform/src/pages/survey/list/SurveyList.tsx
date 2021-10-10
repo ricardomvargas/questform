@@ -61,8 +61,11 @@ const SurveyList = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const resp = await getAllSurveys((currentSurveysPage - 1).toString());
-      const { list, total } = (resp?.data as TServerResponseList) || {};
+      const surveyResponse = await getAllSurveys(
+        (currentSurveysPage - 1).toString()
+      );
+      const responseData = await surveyResponse.json();
+      const { list, total } = (responseData as TServerResponseList) || {};
       const surveys: ListItem[] =
         total > 0
           ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl))

@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import LanguagePicker from './components/LanguagePicker/LanguagePicker';
 
-import DashBoard from './pages/dashboard/';
-import SurveyList from './pages/survey/list/';
-import Survey from './pages/survey/item/';
-import QuestionList from './pages/question/list';
-import Question from './pages/question/item';
+import DashBoard from './pages/dashboard/Dashboard';
+import SurveyList from './pages/survey/list/SurveyList';
+import Survey from './pages/survey/item/SurveyItem';
+import QuestionList from './pages/question/list/QuestionList';
+import Question from './pages/question/item/QustionItem';
 
 import LangContext from './context';
 

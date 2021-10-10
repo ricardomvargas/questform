@@ -147,15 +147,15 @@ const IconButton = ({
             width='15.531px'
             height='15.5px'
             viewBox='0 0 15.531 15.5'
-            enable-background='new 0 0 15.531 15.5'
+            enableBackground='new 0 0 15.531 15.5'
           >
             <g>
               <g id='btn-add_4_'>
                 <circle
                   fill='#CACBCC'
                   stroke='#878787'
-                  stroke-width='0.5337'
-                  stroke-miterlimit='10'
+                  strokeWidth='0.5337'
+                  strokeMiterlimit='10'
                   cx='7.764'
                   cy='7.762'
                   r='7.472'
@@ -191,15 +191,15 @@ const IconButton = ({
             width='15.469px'
             height='15.5px'
             viewBox='0 0 15.469 15.5'
-            enable-background='new 0 0 15.469 15.5'
+            enableBackground='new 0 0 15.469 15.5'
           >
             <g>
               <g id='btn-add_1_'>
                 <circle
                   fill='#CACBCC'
                   stroke='#878787'
-                  stroke-width='0.5337'
-                  stroke-miterlimit='10'
+                  strokeWidth='0.5337'
+                  strokeMiterlimit='10'
                   cx='7.733'
                   cy='7.762'
                   r='7.472'

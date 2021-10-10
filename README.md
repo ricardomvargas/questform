@@ -2,35 +2,35 @@
 Web app for creating online survey (in development)
 
 <details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#motivation">Motivation</a></li>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#Instaling-and-running-the-app">Instaling and running the app</a></li>
-        <li><a href="#running-tests">Running Tests</a></li>
-      </ul>
-    </li>
-  </ol>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#Instaling-and-running-the-app">Installing and running the app</a></li>
+        <li><a href="#running-tests">Running Tests</a></li>
+      </ul>
+    </li>
+  </ol>
 </details>
 
 ## About The Project
 
 Questform is a web application for creating online surveys, the administrator can create a survey with questions and answers for users to choose. Is possible to configure when the survey will be online, manager survey status and check surveys reports. The project is divided in 3 parts:
 - questform-services: Very basic backend application written in PHP (in development / in the future I'm planning to change to a Node application)
-- questform: The admin appliation written in react (in development)
+- questform: The admin application written in react (in development)
 - onlinesurvey: The online survey (not created yet / the name can change)
 
 ### Motivation
 
-I'm studying many subjects of my interest and building small applications to test those things, but after a lot of small app's built, I decided to create a large application to put all these things together. So questform is an application with no commercial purpose, my intention is to create an application for testing many things that I'm studying in a  real size application.
+I'm studying many subjects of my interest and building small applications to test those things, but after a lot of small app's built, I decided to create a large application to put all these things together. So questform is an application with no commercial purpose, my intention is to create an application for testing many things that I'm studying in a  real size application.
 
 ### Built With
 
@@ -47,7 +47,7 @@ I'm studying many subjects of my interest and building small applications to tes
 
 ## Getting Started
 
-### Instaling and running the app
+### Installing and running the app
 
 I recommend to use XAMPP (https://www.apachefriends.org/blog/news-article-61070.html) for publishing the PHP app and to use MySQL, is very easy installation.
 
@@ -57,4 +57,4 @@ I recommend to use XAMPP (https://www.apachefriends.org/blog/news-article-61070.
 
 ### Running Tests
 
-There is just a fell tests implemented with Jest and none with cypress, just run: 'npm run test'.
+There are just a few tests implemented with Jest and none with cypress, just run: 'npm run test'.

@@ -43,7 +43,7 @@ I'm studying many subjects of my interest and building small applications to tes
 * [Jest] (https://jestjs.io/)
 * [Cypress] (https://www.cypress.io/)
 * [PHP] (https://www.php.net/)
-- [MySQL] (https://www.mysql.com/)
+* [MySQL] (https://www.mysql.com/)
 
 ## Getting Started
 

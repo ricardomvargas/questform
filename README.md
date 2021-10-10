@@ -14,8 +14,7 @@ Web app for creating online survey (in development)
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#running-the-application">Running The Application</a></li>
+        <li><a href="#Instaling-and-running-the-app">Instaling and running the app</a></li>
         <li><a href="#running-tests">Running Tests</a></li>
       </ul>
     </li>
@@ -48,12 +47,14 @@ I'm studying many subjects of my interest and building small applications to tes
 
 ## Getting Started
 
-- Backend app: I recommend to use XAMPP (https://www.apachefriends.org/blog/news-article-61070.html) for publishing the PHP app and to use MySQL, is very easy installation. Just copy the questform-services and past into the XAMPP 'htdocs' folder.
-- Database: With XAMPP running, just go to 'localhost/phpmyadmin/' to get access to the PHPMyAdmin where you can have access to the MySQL. Add a new database with the name 'questform', and run the scritps in the 'database' folder
-- Frontend app: Navigate to the questform folder and run: npm install. After installation, just run: npm run dev to start the app (you may need configure the backend endpoints according with you server configuration, to do so just check the '/src/http/enpoints.ts' file).
+### Instaling and running the app
 
-### Instalation
+I recommend to use XAMPP (https://www.apachefriends.org/blog/news-article-61070.html) for publishing the PHP app and to use MySQL, is very easy installation.
 
-### Running The Application
+- Backend app: With XAMPP instaled, just copy the 'questform-services' and past into the XAMPP 'htdocs' folder. To start the XAMPP server just execute the 'xampp_start.exe' in the XAMPP folder.
+- Database: With XAMPP running, just go to 'localhost/phpmyadmin/' to get access to the PHPMyAdmin where you can have access to the MySQL. Add a new database with the name 'questform', and run the scritps in the 'database' folder.
+- Frontend app: Navigate to the questform folder and run: 'npm install', after installation, just run: 'npm run dev' to start the app (you may need configure the backend endpoints according with you server configuration, to do so just check the '/src/http/enpoints.ts' file).
 
 ### Running Tests
+
+There is just a fell tests implemented with Jest and none with cypress, just run: 'npm run test'.

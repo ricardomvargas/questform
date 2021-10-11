@@ -6,7 +6,7 @@ Web app for creating online survey (in development)
   <ul>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#motivation">Motivation</a></li>
-    <li><a href="#built-with">Built With</a></li>
+      <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#Instaling-and-running-the-app">Installing and running the app</a></li>
     <li><a href="#running-tests">Running Tests</a></li>

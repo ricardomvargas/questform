@@ -7,11 +7,7 @@ import { AppLink } from '../../types/components/Menu';
 import Menu from '../Menu/Menu';
 import menuIcon from '../../assets/images/menu-icon.png';
 
-import {
-  dashboardRoute,
-  surveysListRoute,
-  questionsListRoute,
-} from '../../util/routes';
+import { dashboardRoute, surveysListRoute, questionsListRoute } from '../../util/routes';
 
 const Header = ({ profilePicture, profileName, languagePicker }: THeader) => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -39,24 +35,24 @@ const Header = ({ profilePicture, profileName, languagePicker }: THeader) => {
 
   return (
     <header>
-      <section className='app-header'>
-        <div className='app-header-content'>
+      <section className="app-header">
+        <div className="app-header-content">
           <div>
             <img
               src={menuIcon}
               style={{ display: menuVisible ? 'none' : 'inline-block' }}
-              className='img-menu'
+              className="img-menu"
               alt={intl.formatMessage({ id: 'Menu' })}
               title={intl.formatMessage({ id: 'Menu' })}
               onClick={handleMenuClick}
             />
           </div>
-          <div className='app-header-user-profile'>
-            <span className='divisor'></span>
+          <div className="app-header-user-profile">
+            <span className="divisor"></span>
             {languagePicker}
             <img
               src={profilePicture}
-              className='img-profile'
+              className="img-profile"
               alt={intl.formatMessage({ id: 'Profile' })}
               title={profileName}
             />

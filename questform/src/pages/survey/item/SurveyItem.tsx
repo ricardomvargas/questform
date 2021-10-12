@@ -41,11 +41,11 @@ const Survey = () => {
   ];
 
   return (
-    <div className='app-body-content-no-margin'>
+    <div className="app-body-content-no-margin">
       <SiteMap options={siteMapOptions} />
-      <div className='page-header'>
+      <div className="page-header">
         <h1>{intl.formatMessage({ id: 'surveyFormNewTitle' })}</h1>
-        <div className='page-header-actions'>
+        <div className="page-header-actions">
           <SurveyStatus status={'online'} displayShadow />
           <IconButton
             buttonType={MORE_OPTIONS_HORIZONTAL}
@@ -54,58 +54,54 @@ const Survey = () => {
           />
         </div>
       </div>
-      <div className='app-body-content'>
-        <form name='survey-submit' method='POST'>
+      <div className="app-body-content">
+        <form name="survey-submit" method="POST">
           <fieldset>
             <label>{intl.formatMessage({ id: 'surveyFormTitle' })}</label>
             <input
-              name='title'
+              name="title"
               placeholder={intl.formatMessage({ id: 'formRequiredField' })}
-              type='text'
-              className='input-has-erros'
+              type="text"
+              className="input-has-erros"
             />
           </fieldset>
           <fieldset>
             <label>{intl.formatMessage({ id: 'surveyFormDescription' })}</label>
             <textarea
-              name='description'
+              name="description"
               placeholder={intl.formatMessage({ id: 'formRequiredField' })}
               rows={8}
-              className='input-has-erros'
+              className="input-has-erros"
             ></textarea>
           </fieldset>
           <fieldset>
             <label>{intl.formatMessage({ id: 'surveyFormPublicTitle' })}</label>
             <input
-              name='publicTitle'
+              name="publicTitle"
               placeholder={intl.formatMessage({ id: 'formRequiredField' })}
-              type='text'
+              type="text"
             />
           </fieldset>
           <fieldset>
-            <label>
-              {intl.formatMessage({ id: 'surveyFormPublicDescription' })}
-            </label>
+            <label>{intl.formatMessage({ id: 'surveyFormPublicDescription' })}</label>
             <textarea
-              name='publicDescription'
+              name="publicDescription"
               placeholder={intl.formatMessage({ id: 'formRequiredField' })}
               rows={8}
             ></textarea>
           </fieldset>
           <fieldset>
-            <label>
-              {intl.formatMessage({ id: 'surveyFormConclusionMessage' })}
-            </label>
+            <label>{intl.formatMessage({ id: 'surveyFormConclusionMessage' })}</label>
             <textarea
-              name='conclusionMessage'
+              name="conclusionMessage"
               placeholder={intl.formatMessage({ id: 'formRequiredField' })}
               rows={8}
             ></textarea>
           </fieldset>
-          <div className='button-block'>
+          <div className="button-block">
             <Button
-              skin='save'
-              name='save-survey'
+              skin="save"
+              name="save-survey"
               isSubmit
               text={intl.formatMessage({ id: 'buttonSave' })}
             />

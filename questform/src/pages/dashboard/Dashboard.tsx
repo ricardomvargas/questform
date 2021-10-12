@@ -12,14 +12,7 @@ import IconButton from '../../components/IconButton/IconButton';
 import { getLastSurveys } from '../../http/surveys';
 import { surveysEditRoute } from '../../util/routes';
 
-import {
-  PURPLE,
-  GREEN,
-  BLUE,
-  RED,
-  ARROW_LEFT,
-  ARROW_RIGHT,
-} from '../../util/constants';
+import { PURPLE, GREEN, BLUE, RED, ARROW_LEFT, ARROW_RIGHT } from '../../util/constants';
 import { BuildDataTableLine } from '../../util/util';
 
 const moreOptions = [
@@ -42,9 +35,7 @@ const Dashboard = () => {
       const responseData = await surveyResponse.json();
       const { list, total } = (responseData as TServerResponseList) || {};
       const surveys: ListItem[] =
-        total > 0
-          ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl))
-          : [];
+        total > 0 ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl)) : [];
 
       setSurveys({ list: surveys, totalItens: total });
     };
@@ -55,12 +46,12 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className='app-body-content-no-margin'>
-      <div className='page-header'>
+    <div className="app-body-content-no-margin">
+      <div className="page-header">
         <h1>{intl.formatMessage({ id: 'dashboardTitle' })}</h1>
       </div>
-      <div className='app-body-content'>
-        <section className='cards-section'>
+      <div className="app-body-content">
+        <section className="cards-section">
           <div>
             <IconButton
               buttonType={ARROW_LEFT}
@@ -82,7 +73,7 @@ const Dashboard = () => {
             <DashBoardCard skin={RED} title={'loren inpsum'} content={'0'} />
           </div>
         </section>
-        <section className='last-surveys-section'>
+        <section className="last-surveys-section">
           <h4>{intl.formatMessage({ id: 'dashboardLastSurveysAnswered' })}</h4>
           <DataTable
             dataList={surveys.list}

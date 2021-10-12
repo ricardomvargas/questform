@@ -25,5 +25,4 @@ export const getStoredLanguage = (): string => {
  * Set the language in the browser storage
  * @param newLang
  */
-export const storeLanguage = (newLang: string): void =>
-  localStorage.setItem(STORAGE_NAME, newLang);
+export const storeLanguage = (newLang: string): void => localStorage.setItem(STORAGE_NAME, newLang);

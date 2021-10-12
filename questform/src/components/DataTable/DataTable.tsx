@@ -7,14 +7,7 @@ import DataTablePaginator from './DataTablePaginator';
 import IconButton from '../IconButton/IconButton';
 import SurveyStatus from '../SurveyStatus/SurveyStatus';
 
-import {
-  CLOSE,
-  SEARCH,
-  FILTER,
-  ADD,
-  RED,
-  DELETE_ITEM,
-} from '../../util/constants';
+import { CLOSE, SEARCH, FILTER, ADD, RED, DELETE_ITEM } from '../../util/constants';
 
 const DataTable = ({
   listTitle,
@@ -50,19 +43,14 @@ const DataTable = ({
   const getSectionSize = () => sectionSize ?? DEFAULT_SECTION_SIZE;
 
   const handlerClickOutside = (e: MouseEvent) => {
-    if (
-      !moreOptionsRef?.current?.find((ref: HTMLDivElement) =>
-        ref?.contains(e?.target as Node)
-      )
-    ) {
+    if (!moreOptionsRef?.current?.find((ref: HTMLDivElement) => ref?.contains(e?.target as Node))) {
       setOpenedOptions({ id: 0, display: false });
     }
   };
 
   useEffect(() => {
     document.addEventListener('click', handlerClickOutside, true);
-    return () =>
-      document.removeEventListener('click', handlerClickOutside, true);
+    return () => document.removeEventListener('click', handlerClickOutside, true);
   }, []);
 
   const handleSearchTextVisibility = () => {
@@ -114,25 +102,21 @@ const DataTable = ({
     hideTitle ? 'data-table-content-no-title' : 'data-table-content';
 
   return (
-    <div className='data-table'>
+    <div className="data-table">
       {hideTitle ? null : (
-        <div className='page-header'>
+        <div className="page-header">
           <h1>{listTitle}</h1>
-          <div className='page-header-actions'>
+          <div className="page-header-actions">
             {searchAction ? (
               <>
                 <input
-                  id='data-table-search'
-                  type='text'
-                  name='data-table-search'
+                  id="data-table-search"
+                  type="text"
+                  name="data-table-search"
                   onChange={handleSearchTextAction}
                   value={searchText}
                   disabled={!searchTextVisible}
-                  className={
-                    searchTextVisible
-                      ? 'input-search-visible'
-                      : 'input-search-hide '
-                  }
+                  className={searchTextVisible ? 'input-search-visible' : 'input-search-hide '}
                 />
                 {searchTextButtonVisible ? (
                   <IconButton
@@ -185,53 +169,42 @@ const DataTable = ({
       <ul className={buildContentStyle()}>
         {dataList?.length > 0 ? (
           dataList.map((data, index) => (
-            <li className='data-item' key={data.id}>
+            <li className="data-item" key={data.id}>
               {data?.status ? (
-                <div className='item-status'>
+                <div className="item-status">
                   <SurveyStatus status={data.status} />
                 </div>
               ) : null}
-              <div className='item-text'>
+              <div className="item-text">
                 <span>{data.mainContent}</span>
-                {data?.subContent ? (
-                  <span className='sub-text'>{data?.subContent}</span>
-                ) : null}
+                {data?.subContent ? <span className="sub-text">{data?.subContent}</span> : null}
               </div>
               {hideMoreOptions === undefined || hideMoreOptions === false ? (
                 deleteAction || moreOptions ? (
                   <div
-                    className='more-options'
-                    ref={(el) =>
-                      (moreOptionsRef.current[index] = el as HTMLDivElement)
-                    }
+                    className="more-options"
+                    ref={(el) => (moreOptionsRef.current[index] = el as HTMLDivElement)}
                   >
                     {moreOptions ? (
-                      <div className='options'>
+                      <div className="options">
                         <IconButton
-                          buttonType='moreOptionsHorizontal'
-                          color='dark'
+                          buttonType="moreOptionsHorizontal"
+                          color="dark"
                           onClickAction={() => handleMoreOptionsAction(data.id)}
                         />
-                        {data.id === openedOptions.id &&
-                        openedOptions.display ? (
+                        {data.id === openedOptions.id && openedOptions.display ? (
                           <ul>
                             {moreOptions.map((option) => {
                               const onClick = option?.onClick ?? null;
                               return (
                                 <li key={`${option.title}-${data.id}`}>
                                   {onClick ? (
-                                    <a
-                                      href={option.url}
-                                      onClick={() => onClick(data.id)}
-                                    >
+                                    <a href={option.url} onClick={() => onClick(data.id)}>
                                       {option.title}
                                     </a>
                                   ) : (
                                     <a
-                                      href={option.url.replace(
-                                        ':id',
-                                        data.id as unknown as string
-                                      )}
+                                      href={option.url.replace(':id', data.id as unknown as string)}
                                     >
                                       {option.title}
                                     </a>

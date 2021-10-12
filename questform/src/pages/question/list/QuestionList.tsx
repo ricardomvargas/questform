@@ -17,12 +17,12 @@ const QuestionList = () => {
   ];
 
   return (
-    <div className='app-body-content-no-margin'>
+    <div className="app-body-content-no-margin">
       <SiteMap options={siteMapOptions} />
-      <div className='page-header'>
+      <div className="page-header">
         <h1>{intl.formatMessage({ id: 'questionList' })}</h1>
       </div>
-      <div className='app-body-content'>
+      <div className="app-body-content">
         <p>Page in construction...</p>
       </div>
     </div>

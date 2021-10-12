@@ -36,11 +36,8 @@ function App() {
   const updateAppLang = (newLang: string) => setAppLang(newLang);
 
   return (
-    <IntlProvider
-      locale={appLang}
-      messages={appLang === 'en' ? messages.en : messages.pt}
-    >
-      <div className='app'>
+    <IntlProvider locale={appLang} messages={appLang === 'en' ? messages.en : messages.pt}>
+      <div className="app">
         <Header
           profilePicture={profileImg}
           profileName={'Ricardo Vargas'}
@@ -50,7 +47,7 @@ function App() {
             </LangContext.Provider>
           }
         />
-        <div className='app-body'>
+        <div className="app-body">
           <Router>
             <Switch>
               <Route component={DashBoard} exact path={dashboardRoute} />
@@ -58,11 +55,7 @@ function App() {
               <Route component={Survey} path={surveysNewRoute} />
               <Route component={Survey} path={surveysEditRoute} />
               <Route component={QuestionList} exact path={questionsListRoute} />
-              <Route
-                component={QuestionList}
-                exact
-                path={questionsListBySurveysRoute}
-              />
+              <Route component={QuestionList} exact path={questionsListBySurveysRoute} />
               <Route component={Question} path={questionsNewRoute} />
               <Route component={Question} path={questionsEditRoute} />
             </Switch>

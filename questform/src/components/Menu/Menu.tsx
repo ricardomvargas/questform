@@ -19,13 +19,13 @@ const Menu = ({ menuIcon, menuVisible, onMenuClick, appLinks }: TMenu) => {
   };
 
   return (
-    <nav className='menu' style={{ width: menuVisible ? '170px' : '0' }}>
-      <section className='menu-top'>
+    <nav className="menu" style={{ width: menuVisible ? '170px' : '0' }}>
+      <section className="menu-top">
         <div>
           {/* <IconButton buttonType="menu" onClickAction={onMenuClick} /> */}
           <img
             src={menuIcon}
-            className='img-menu'
+            className="img-menu"
             alt={intl.formatMessage({ id: 'Menu' })}
             title={intl.formatMessage({ id: 'Menu' })}
             onClick={() => onMenuClick()}
@@ -33,7 +33,7 @@ const Menu = ({ menuIcon, menuVisible, onMenuClick, appLinks }: TMenu) => {
         </div>
       </section>
       <section>
-        <ul className='menu-links'>
+        <ul className="menu-links">
           {menuVisible &&
             /** #TODO: Add key in the <li> */
             appLinks.map((appLink, index: number) => (
@@ -43,7 +43,7 @@ const Menu = ({ menuIcon, menuVisible, onMenuClick, appLinks }: TMenu) => {
               >
                 <a href={appLink.url} onClick={() => onMenuClick()}>
                   {appLink.title}
-                  <img id={`img${index}`} src={arrowRight} alt='go' />
+                  <img id={`img${index}`} src={arrowRight} alt="go" />
                 </a>
               </li>
             ))}

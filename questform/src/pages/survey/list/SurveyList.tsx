@@ -10,11 +10,7 @@ import SiteMap from '../../../components/SiteMap/SiteMap';
 
 import { getAllSurveys } from '../../../http/surveys';
 
-import {
-  dashboardRoute,
-  surveysEditRoute,
-  surveysNewRoute,
-} from '../../../util/routes';
+import { dashboardRoute, surveysEditRoute, surveysNewRoute } from '../../../util/routes';
 import { BuildDataTableLine } from '../../../util/util';
 
 const moreOptions = [
@@ -61,15 +57,11 @@ const SurveyList = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const surveyResponse = await getAllSurveys(
-        (currentSurveysPage - 1).toString()
-      );
+      const surveyResponse = await getAllSurveys((currentSurveysPage - 1).toString());
       const responseData = await surveyResponse.json();
       const { list, total } = (responseData as TServerResponseList) || {};
       const surveys: ListItem[] =
-        total > 0
-          ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl))
-          : [];
+        total > 0 ? list.map((survey: TSurvey) => BuildDataTableLine(survey, intl)) : [];
 
       setSurveys({ list: surveys, totalItens: total });
     };
@@ -80,7 +72,7 @@ const SurveyList = () => {
   }, [currentSurveysPage]);
 
   return (
-    <div className='app-body-content-no-margin'>
+    <div className="app-body-content-no-margin">
       <SiteMap options={siteMapOptions} />
       <DataTable
         dataList={surveys.list}

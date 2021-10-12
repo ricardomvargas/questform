@@ -29,22 +29,20 @@ const Question = () => {
   ];
 
   return (
-    <div className='app-body-content-no-margin'>
+    <div className="app-body-content-no-margin">
       <SiteMap options={siteMapOptions} />
-      <div className='page-header'>
+      <div className="page-header">
         <h1>{intl.formatMessage({ id: 'questionFormNewTitle' })}</h1>
       </div>
-      <div className='app-body-content'>
-        <form name='survey-submit' method='POST'>
+      <div className="app-body-content">
+        <form name="survey-submit" method="POST">
           <fieldset>
-            <label>
-              {intl.formatMessage({ id: 'questionFormDescription' })}
-            </label>
+            <label>{intl.formatMessage({ id: 'questionFormDescription' })}</label>
             <input
-              name='title'
+              name="title"
               placeholder={intl.formatMessage({ id: 'formRequiredField' })}
-              type='text'
-              className='input-has-erros'
+              type="text"
+              className="input-has-erros"
             />
           </fieldset>
         </form>

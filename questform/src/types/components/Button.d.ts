@@ -1,11 +1,4 @@
-export type TButtonSkin =
-  | 'save'
-  | 'publish'
-  | 'cancel'
-  | 'delete'
-  | 'finish'
-  | 'login'
-  | undefined;
+export type TButtonSkin = 'save' | 'publish' | 'cancel' | 'delete' | 'finish' | 'login' | undefined;
 
 export interface TButton {
   text: string;

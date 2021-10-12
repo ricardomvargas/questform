@@ -2,14 +2,7 @@ import React from 'react';
 
 import { TButton, TButtonSkin } from '../../types/components/Button';
 
-import {
-  SAVE,
-  PUBLISH,
-  CANCEL,
-  DELETE,
-  FINISH,
-  LOGIN,
-} from '../../util/constants';
+import { SAVE, PUBLISH, CANCEL, DELETE, FINISH, LOGIN } from '../../util/constants';
 
 const btnSkin = (skin: TButtonSkin) => {
   switch (skin) {

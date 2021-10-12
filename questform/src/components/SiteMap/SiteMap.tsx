@@ -6,7 +6,7 @@ const SiteMap = ({ options }: TSiteMap) => {
   const total = options.length;
 
   return (
-    <nav id='site-map'>
+    <nav id="site-map">
       <ul>
         {/** #TODO: Add key in the <li> without the index */}
         {options.map((option: SiteMapOption, index) => (
@@ -19,7 +19,7 @@ const SiteMap = ({ options }: TSiteMap) => {
                 {index + 1 < total ? <span>&gt;</span> : null}
               </>
             ) : (
-              <span className='pageTitle'>{option.title}</span>
+              <span className="pageTitle">{option.title}</span>
             )}
           </li>
         ))}

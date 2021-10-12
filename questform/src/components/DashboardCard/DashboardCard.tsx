@@ -11,9 +11,7 @@ const DashboardCard = ({ skin, title, content, url }: TDashboardCard) => {
 
   return (
     <div className={`${skin}-card roboto-condensed`}>
-      <h4 className='roboto-condensed-bold'>
-        {url ? buildLink(url, title) : title}
-      </h4>
+      <h4 className="roboto-condensed-bold">{url ? buildLink(url, title) : title}</h4>
       <p>{url ? buildLink(url, content) : content}</p>
     </div>
   );

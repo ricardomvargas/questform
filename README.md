@@ -36,6 +36,8 @@ I'm studying many subjects of my interest and building small applications to tes
 * [Cypress] (https://www.cypress.io/)
 * [PHP] (https://www.php.net/)
 * [MySQL] (https://www.mysql.com/)
+* [Jest] (https://jestjs.io/)
+* [Testing Library] (https://testing-library.com/)
 
 ## Getting Started
 
@@ -49,4 +51,4 @@ I recommend to use XAMPP (https://www.apachefriends.org/blog/news-article-61070.
 
 ### Running Tests
 
-There are just a few tests implemented with Jest and none with cypress, just run: 'npm run test'.
+There are just a few tests implemented with Jest and Testing Library but none with cypress, just run: 'npm run test'.

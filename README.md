@@ -3,7 +3,7 @@ Web app for creating online survey (in development)
 
 <details>
   <summary>Table of Contents</summary>
-  <0l>
+  <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#motivation">Motivation</a></li>
     <li><a href="#built-with">Built With</a></li>

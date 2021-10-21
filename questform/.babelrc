@@ -1,15 +1,14 @@
 {
-  /* #TODO: Review libaries:
-      - "@babel/plugin-transform-modules-commonjs": "^7.15.4"
-      - "jsdom": "17.0.0",
-      - "jsdom-global": "3.0.2",
-     #TODO: Review this config: */
   "env": {
     "test": {
       "plugins": ["@babel/plugin-transform-modules-commonjs"]
     }
   },
-  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
   "plugins": [
     [
       "@babel/plugin-transform-runtime",

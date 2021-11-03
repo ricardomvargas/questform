@@ -3,10 +3,10 @@ import { useIntl } from 'react-intl';
 
 import LangContext from '../../context';
 
-import brFlagRounded from '../../assets/images/br-flag-rounded.png';
-import ukFlagRounded from '../../assets/images/uk-flag-rounded.png';
-import arrowDownImg from '../../assets/images/arrow-down.png';
-import closeImg from '../../assets/images/close.png';
+import { brFlagRounded } from '../../util/imagesPath';
+import { ukFlagRounded } from '../../util/imagesPath';
+import { arrowDownImg } from '../../util/imagesPath';
+import { closeImg } from '../../util/imagesPath';
 
 import { storeLanguage, appLangs } from '../../intl/languageStorage';
 

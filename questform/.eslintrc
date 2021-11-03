@@ -1,6 +1,12 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "prettier"],
-  "plugins": ["prettier"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "prettier",
+    "plugin:testing-library/react",
+    "puglin:jest-dom/recommended"
+  ],
+  "plugins": ["prettier", "testing-library", "jest-dom"],
   "rules": {
     "prettier/prettier": ["error"]
   }

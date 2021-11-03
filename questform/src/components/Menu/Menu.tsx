@@ -3,7 +3,7 @@ import { useIntl } from 'react-intl';
 
 import { TMenu } from '../../types/components/Menu';
 
-import arrowRight from '../../assets/images/arrow-right.png';
+import { arrowRight } from '../../util/imagesPath';
 
 const Menu = ({ menuIcon, menuVisible, onMenuClick, appLinks }: TMenu) => {
   const intl = useIntl();

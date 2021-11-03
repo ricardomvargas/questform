@@ -5,7 +5,7 @@ import { THeader } from '../../types/components/Header';
 import { AppLink } from '../../types/components/Menu';
 
 import Menu from '../Menu/Menu';
-import menuIcon from '../../assets/images/menu-icon.png';
+import { menuIcon } from '../../util/imagesPath';
 
 import { dashboardRoute, surveysListRoute, questionsListRoute } from '../../util/routes';
 

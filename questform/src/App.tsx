@@ -13,7 +13,7 @@ import Question from './pages/question/item/QustionItem';
 
 import LangContext from './context';
 
-import profileImg from './assets/images/me.jpg';
+import { profileImg } from './util/imagesPath';
 import messages from './intl/messages';
 import { getStoredLanguage } from './intl/languageStorage';
 

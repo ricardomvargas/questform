@@ -11,7 +11,6 @@ const btnSkin = (skin: TButtonSkin) => {
     case PUBLISH:
       return 'btn-publish';
     case CANCEL:
-      return 'btn-cancel';
     case DELETE:
       return 'btn-cancel';
     case FINISH:

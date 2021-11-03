@@ -23,52 +23,52 @@
 .btn {
   &-save {
     @extend %btn-default;
-    background-color: $light-green2;
-    border-color: $dark-green2;
+    background-color: $btn-green2;
+    border-color: $btn-green2-hover;
     &:hover,
     &:focus {
-      background-color: $dark-green2;
-      border-color: $dark-green2;
+      background-color: $btn-green2-hover;
+      border-color: $btn-green2-hover;
     }
   }
   &-publish {
     @extend %btn-default;
-    background-color: $light-orange;
-    border-color: $dark-orange;
+    background-color: $btn-orange;
+    border-color: $btn-orange-hover;
     &:hover,
     &:focus {
-      background-color: $dark-orange;
-      border-color: $dark-orange;
+      background-color: $btn-orange-hover;
+      border-color: $btn-orange-hover;
     }
   }
   &-cancel {
     @extend %btn-default;
-    background-color: $light-red;
-    border-color: $dark-red;
+    background-color: $btn-red;
+    border-color: $btn-red-hover;
     &:hover,
     &:focus {
-      background-color: $dark-red;
-      border-color: $dark-red;
+      background-color: $btn-red-hover;
+      border-color: $btn-red-hover;
     }
   }
   &-finish {
     @extend %btn-default;
-    background-color: $light-purple;
-    border-color: $dark-purple;
+    background-color: $btn-purple;
+    border-color: $btn-purple-hover;
     &:hover,
     &:focus {
-      background-color: $dark-purple;
-      border-color: $dark-purple;
+      background-color: $btn-purple-hover;
+      border-color: $btn-purple-hover;
     }
   }
   &-login {
     @extend %btn-default;
-    background-color: $light-blue;
-    border-color: $dark-blue;
+    background-color: $btn-blue;
+    border-color: $btn-blue-hover;
     &:hover,
     &:focus {
-      background-color: $dark-blue;
-      border-color: $dark-blue;
+      background-color: $btn-blue-hover;
+      border-color: $btn-blue-hover;
     }
   }
 }

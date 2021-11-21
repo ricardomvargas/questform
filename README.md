@@ -23,12 +23,11 @@ I'm studying many subjects of my interest and building small applications to tes
 * [typescript] (https://www.typescriptlang.org/)
 * [SASS] (https://sass-lang.com/)
 * [webpack] (https://webpack.js.org/)
-* [Jest] (https://jestjs.io/)
-* [Cypress] (https://www.cypress.io/)
 * [PHP] (https://www.php.net/)
 * [MySQL] (https://www.mysql.com/)
 * [Jest] (https://jestjs.io/)
 * [Testing Library] (https://testing-library.com/)
+* * [Cypress] (https://www.cypress.io/)
 
 ## Getting Started
 

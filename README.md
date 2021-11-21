@@ -27,7 +27,7 @@ I'm studying many subjects of my interest and building small applications to tes
 * [MySQL] (https://www.mysql.com/)
 * [Jest] (https://jestjs.io/)
 * [Testing Library] (https://testing-library.com/)
-* * [Cypress] (https://www.cypress.io/)
+* [Cypress] (https://www.cypress.io/)
 
 ## Getting Started
 

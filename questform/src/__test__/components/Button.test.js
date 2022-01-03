@@ -11,6 +11,11 @@ import { SAVE, PUBLISH, CANCEL, DELETE, FINISH, LOGIN } from '../../util/constan
 
 const Wraper = ({ children }) => <div>{children}</div>;
 
+test('Check if match with snapshot', () => {
+  const button = render(<Wraper children={<Button name="default" text="Default" />} />);
+  expect(button).toMatchSnapshot();
+});
+
 test('Check if Button render with default skin', () => {
   render(<Wraper children={<Button name="default" text="Default" />} />);
   const button = screen.getByRole('button', { name: /default/i });

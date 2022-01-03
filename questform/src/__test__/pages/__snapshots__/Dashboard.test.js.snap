@@ -1,0 +1,482 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if match with snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="app-body-content-no-margin"
+      >
+        <div
+          class="page-header"
+        >
+          <h1>
+            My Dashboard
+          </h1>
+        </div>
+        <div
+          class="app-body-content"
+        >
+          <section
+            class="cards-section"
+          >
+            <div>
+              <a
+                title="Previously week"
+              >
+                <svg
+                  enable-background="new 0 0 15.531 15.5"
+                  height="15.5px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 15.531 15.5"
+                  width="15.531px"
+                  x="0px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  y="0px"
+                >
+                  <g>
+                    <g
+                      id="btn-add_4_"
+                    >
+                      <circle
+                        cx="7.764"
+                        cy="7.762"
+                        fill="#CACBCC"
+                        r="7.472"
+                        stroke="#878787"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5337"
+                      />
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="SVGID_1_"
+                        x1="7.835"
+                        x2="7.835"
+                        y1="1.9565"
+                        y2="13.7109"
+                      >
+                        <stop
+                          offset="0.4"
+                          style="stop-color: rgb(202, 203, 204);"
+                        />
+                        <stop
+                          offset="1"
+                          style="stop-color: rgb(135, 135, 135);"
+                        />
+                      </lineargradient>
+                      <circle
+                        cx="7.835"
+                        cy="7.833"
+                        fill="url(#SVGID_1_)"
+                        r="5.877"
+                      />
+                    </g>
+                    <polygon
+                      fill="#FFFFFF"
+                      points="6.706,7.374 9.625,5.689 9.625,4.534 4.706,7.374 9.625,10.214 9.625,9.059 	"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <h2>
+                10/04/2021 to 10/08/2021
+              </h2>
+              <a
+                title="Next week"
+              >
+                <svg
+                  enable-background="new 0 0 15.469 15.5"
+                  height="15.5px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 15.469 15.5"
+                  width="15.469px"
+                  x="0px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  y="0px"
+                >
+                  <g>
+                    <g
+                      id="btn-add_1_"
+                    >
+                      <circle
+                        cx="7.733"
+                        cy="7.762"
+                        fill="#CACBCC"
+                        r="7.472"
+                        stroke="#878787"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5337"
+                      />
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="SVGID_1_"
+                        x1="7.8037"
+                        x2="7.8037"
+                        y1="1.9565"
+                        y2="13.7104"
+                      >
+                        <stop
+                          offset="0.4"
+                          style="stop-color: rgb(202, 203, 204);"
+                        />
+                        <stop
+                          offset="1"
+                          style="stop-color: rgb(135, 135, 135);"
+                        />
+                      </lineargradient>
+                      <circle
+                        cx="7.804"
+                        cy="7.833"
+                        fill="url(#SVGID_1_)"
+                        r="5.877"
+                      />
+                    </g>
+                    <polygon
+                      fill="#FFFFFF"
+                      points="8.138,7.374 5.219,9.059 5.219,10.214 10.138,7.374 5.219,4.534 5.219,5.689 	"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <hr />
+            <div>
+              <div
+                class="purple-card roboto-condensed"
+              >
+                <h4
+                  class="roboto-condensed-bold"
+                >
+                  loren inpsum
+                </h4>
+                <p>
+                  0
+                </p>
+              </div>
+              <div
+                class="green-card roboto-condensed"
+              >
+                <h4
+                  class="roboto-condensed-bold"
+                >
+                  loren inpsum
+                </h4>
+                <p>
+                  0
+                </p>
+              </div>
+              <div
+                class="blue-card roboto-condensed"
+              >
+                <h4
+                  class="roboto-condensed-bold"
+                >
+                  loren inpsum
+                </h4>
+                <p>
+                  0
+                </p>
+              </div>
+              <div
+                class="red-card roboto-condensed"
+              >
+                <h4
+                  class="roboto-condensed-bold"
+                >
+                  loren inpsum
+                </h4>
+                <p>
+                  0
+                </p>
+              </div>
+            </div>
+          </section>
+          <section
+            class="last-surveys-section"
+          >
+            <h4>
+              Last survey's aswered
+            </h4>
+            <div
+              class="data-table"
+            >
+              <ul
+                class="data-table-content-no-title"
+              >
+                <li>
+                  No data found
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="app-body-content-no-margin"
+    >
+      <div
+        class="page-header"
+      >
+        <h1>
+          My Dashboard
+        </h1>
+      </div>
+      <div
+        class="app-body-content"
+      >
+        <section
+          class="cards-section"
+        >
+          <div>
+            <a
+              title="Previously week"
+            >
+              <svg
+                enable-background="new 0 0 15.531 15.5"
+                height="15.5px"
+                id="Layer_1"
+                version="1.1"
+                viewBox="0 0 15.531 15.5"
+                width="15.531px"
+                x="0px"
+                xmlns="http://www.w3.org/2000/svg"
+                y="0px"
+              >
+                <g>
+                  <g
+                    id="btn-add_4_"
+                  >
+                    <circle
+                      cx="7.764"
+                      cy="7.762"
+                      fill="#CACBCC"
+                      r="7.472"
+                      stroke="#878787"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5337"
+                    />
+                    <lineargradient
+                      gradientUnits="userSpaceOnUse"
+                      id="SVGID_1_"
+                      x1="7.835"
+                      x2="7.835"
+                      y1="1.9565"
+                      y2="13.7109"
+                    >
+                      <stop
+                        offset="0.4"
+                        style="stop-color: rgb(202, 203, 204);"
+                      />
+                      <stop
+                        offset="1"
+                        style="stop-color: rgb(135, 135, 135);"
+                      />
+                    </lineargradient>
+                    <circle
+                      cx="7.835"
+                      cy="7.833"
+                      fill="url(#SVGID_1_)"
+                      r="5.877"
+                    />
+                  </g>
+                  <polygon
+                    fill="#FFFFFF"
+                    points="6.706,7.374 9.625,5.689 9.625,4.534 4.706,7.374 9.625,10.214 9.625,9.059 	"
+                  />
+                </g>
+              </svg>
+            </a>
+            <h2>
+              10/04/2021 to 10/08/2021
+            </h2>
+            <a
+              title="Next week"
+            >
+              <svg
+                enable-background="new 0 0 15.469 15.5"
+                height="15.5px"
+                id="Layer_1"
+                version="1.1"
+                viewBox="0 0 15.469 15.5"
+                width="15.469px"
+                x="0px"
+                xmlns="http://www.w3.org/2000/svg"
+                y="0px"
+              >
+                <g>
+                  <g
+                    id="btn-add_1_"
+                  >
+                    <circle
+                      cx="7.733"
+                      cy="7.762"
+                      fill="#CACBCC"
+                      r="7.472"
+                      stroke="#878787"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5337"
+                    />
+                    <lineargradient
+                      gradientUnits="userSpaceOnUse"
+                      id="SVGID_1_"
+                      x1="7.8037"
+                      x2="7.8037"
+                      y1="1.9565"
+                      y2="13.7104"
+                    >
+                      <stop
+                        offset="0.4"
+                        style="stop-color: rgb(202, 203, 204);"
+                      />
+                      <stop
+                        offset="1"
+                        style="stop-color: rgb(135, 135, 135);"
+                      />
+                    </lineargradient>
+                    <circle
+                      cx="7.804"
+                      cy="7.833"
+                      fill="url(#SVGID_1_)"
+                      r="5.877"
+                    />
+                  </g>
+                  <polygon
+                    fill="#FFFFFF"
+                    points="8.138,7.374 5.219,9.059 5.219,10.214 10.138,7.374 5.219,4.534 5.219,5.689 	"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <hr />
+          <div>
+            <div
+              class="purple-card roboto-condensed"
+            >
+              <h4
+                class="roboto-condensed-bold"
+              >
+                loren inpsum
+              </h4>
+              <p>
+                0
+              </p>
+            </div>
+            <div
+              class="green-card roboto-condensed"
+            >
+              <h4
+                class="roboto-condensed-bold"
+              >
+                loren inpsum
+              </h4>
+              <p>
+                0
+              </p>
+            </div>
+            <div
+              class="blue-card roboto-condensed"
+            >
+              <h4
+                class="roboto-condensed-bold"
+              >
+                loren inpsum
+              </h4>
+              <p>
+                0
+              </p>
+            </div>
+            <div
+              class="red-card roboto-condensed"
+            >
+              <h4
+                class="roboto-condensed-bold"
+              >
+                loren inpsum
+              </h4>
+              <p>
+                0
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="last-surveys-section"
+        >
+          <h4>
+            Last survey's aswered
+          </h4>
+          <div
+            class="data-table"
+          >
+            <ul
+              class="data-table-content-no-title"
+            >
+              <li>
+                No data found
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

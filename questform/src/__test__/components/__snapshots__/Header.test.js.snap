@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if match with snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <section
+          class="app-header"
+        >
+          <div
+            class="app-header-content"
+          >
+            <div>
+              <img
+                alt="Menu"
+                class="img-menu"
+                src="/assets/images/menu-icon.png"
+                style="display: inline-block;"
+                title="Menu"
+              />
+            </div>
+            <div
+              class="app-header-user-profile"
+            >
+              <span
+                class="divisor"
+              />
+              <section
+                class="lang-menu"
+              >
+                <div
+                  class="lang-menu-item"
+                >
+                  <img
+                    alt="en"
+                    class="img-flag"
+                    src="/assets/images/uk-flag-rounded.png"
+                    title="en"
+                  />
+                  <img
+                    alt="Open"
+                    class="img-options"
+                    id="btn-show-menu-item"
+                    src="/assets/images/arrow-down.png"
+                    title="Open"
+                  />
+                </div>
+                <div
+                  class="lang-menu-options-hide"
+                >
+                  <img
+                    alt="Change to english"
+                    class="img-flag"
+                    src="/assets/images/uk-flag-rounded.png"
+                    title="Change to english"
+                  />
+                  <img
+                    alt="Change to portuguese"
+                    class="img-flag"
+                    src="/assets/images/br-flag-rounded.png"
+                    title="Change to portuguese"
+                  />
+                </div>
+              </section>
+              <img
+                alt="My profile"
+                class="img-profile"
+                src="./assets/images/me.jpg"
+                title="Ricardo Vargas"
+              />
+            </div>
+          </div>
+        </section>
+        <nav
+          class="menu"
+          style="width: 0px;"
+        >
+          <section
+            class="menu-top"
+          >
+            <div>
+              <img
+                alt="Menu"
+                class="img-menu"
+                src="/assets/images/menu-icon.png"
+                title="Menu"
+              />
+            </div>
+          </section>
+          <section>
+            <ul
+              class="menu-links"
+            />
+          </section>
+        </nav>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <section
+        class="app-header"
+      >
+        <div
+          class="app-header-content"
+        >
+          <div>
+            <img
+              alt="Menu"
+              class="img-menu"
+              src="/assets/images/menu-icon.png"
+              style="display: inline-block;"
+              title="Menu"
+            />
+          </div>
+          <div
+            class="app-header-user-profile"
+          >
+            <span
+              class="divisor"
+            />
+            <section
+              class="lang-menu"
+            >
+              <div
+                class="lang-menu-item"
+              >
+                <img
+                  alt="en"
+                  class="img-flag"
+                  src="/assets/images/uk-flag-rounded.png"
+                  title="en"
+                />
+                <img
+                  alt="Open"
+                  class="img-options"
+                  id="btn-show-menu-item"
+                  src="/assets/images/arrow-down.png"
+                  title="Open"
+                />
+              </div>
+              <div
+                class="lang-menu-options-hide"
+              >
+                <img
+                  alt="Change to english"
+                  class="img-flag"
+                  src="/assets/images/uk-flag-rounded.png"
+                  title="Change to english"
+                />
+                <img
+                  alt="Change to portuguese"
+                  class="img-flag"
+                  src="/assets/images/br-flag-rounded.png"
+                  title="Change to portuguese"
+                />
+              </div>
+            </section>
+            <img
+              alt="My profile"
+              class="img-profile"
+              src="./assets/images/me.jpg"
+              title="Ricardo Vargas"
+            />
+          </div>
+        </div>
+      </section>
+      <nav
+        class="menu"
+        style="width: 0px;"
+      >
+        <section
+          class="menu-top"
+        >
+          <div>
+            <img
+              alt="Menu"
+              class="img-menu"
+              src="/assets/images/menu-icon.png"
+              title="Menu"
+            />
+          </div>
+        </section>
+        <section>
+          <ul
+            class="menu-links"
+          />
+        </section>
+      </nav>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

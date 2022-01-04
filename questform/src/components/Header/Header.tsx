@@ -42,8 +42,8 @@ const Header = ({ profilePicture, profileName, languagePicker }: THeader) => {
               src={menuIcon}
               style={{ display: menuVisible ? 'none' : 'inline-block' }}
               className="img-menu"
-              alt={intl.formatMessage({ id: 'Menu' })}
-              title={intl.formatMessage({ id: 'Menu' })}
+              alt={intl.formatMessage({ id: 'menu' })}
+              title={intl.formatMessage({ id: 'menu' })}
               onClick={handleMenuClick}
             />
           </div>
@@ -53,7 +53,7 @@ const Header = ({ profilePicture, profileName, languagePicker }: THeader) => {
             <img
               src={profilePicture}
               className="img-profile"
-              alt={intl.formatMessage({ id: 'Profile' })}
+              alt={intl.formatMessage({ id: 'profile' })}
               title={profileName}
             />
           </div>

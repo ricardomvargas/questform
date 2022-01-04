@@ -5,17 +5,23 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import DashboardCard from '../../components/DashboardCard/DashboardCard';
+import SiteMap from '../../components/SiteMap/SiteMap';
 
-import { PURPLE } from '../../util/constants';
+const siteMapOptions = [
+  {
+    title: 'Home',
+    description: 'Home',
+    route: '/',
+  },
+];
 
 const Wraper = ({ children }) => <div>{children}</div>;
 
 test('Check if match with snapshot', () => {
-  const dasboardCard = render(
+  const siteMap = render(
     <Wraper>
-      <DashboardCard skin={PURPLE} title={'loren inpsum'} content={'0'} />
+      <SiteMap options={siteMapOptions} />
     </Wraper>
   );
-  expect(dasboardCard).toMatchSnapshot();
+  expect(siteMap).toMatchSnapshot();
 });

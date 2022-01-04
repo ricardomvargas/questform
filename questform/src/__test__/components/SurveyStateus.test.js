@@ -5,17 +5,15 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import DashboardCard from '../../components/DashboardCard/DashboardCard';
-
-import { PURPLE } from '../../util/constants';
+import SurveyStatus from '../../components/SurveyStatus/SurveyStatus';
 
 const Wraper = ({ children }) => <div>{children}</div>;
 
 test('Check if match with snapshot', () => {
-  const dasboardCard = render(
+  const surveyStatus = render(
     <Wraper>
-      <DashboardCard skin={PURPLE} title={'loren inpsum'} content={'0'} />
+      <SurveyStatus status="online" />
     </Wraper>
   );
-  expect(dasboardCard).toMatchSnapshot();
+  expect(surveyStatus).toMatchSnapshot();
 });

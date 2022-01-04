@@ -26,8 +26,8 @@ const Menu = ({ menuIcon, menuVisible, onMenuClick, appLinks }: TMenu) => {
           <img
             src={menuIcon}
             className="img-menu"
-            alt={intl.formatMessage({ id: 'Menu' })}
-            title={intl.formatMessage({ id: 'Menu' })}
+            alt={intl.formatMessage({ id: 'menu' })}
+            title={intl.formatMessage({ id: 'menu' })}
             onClick={() => onMenuClick()}
           />
         </div>

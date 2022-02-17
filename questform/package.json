@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "Application for creating online surveys",
   "dependencies": {
+    "axios": "^0.26.0",
     "node-sass": "4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

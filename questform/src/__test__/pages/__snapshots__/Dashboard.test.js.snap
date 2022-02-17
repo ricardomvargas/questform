@@ -206,8 +206,55 @@ Object {
               <ul
                 class="data-table-content-no-title"
               >
-                <li>
-                  No data found
+                <li
+                  class="data-item"
+                >
+                  <div
+                    class="item-status"
+                  >
+                    <span
+                      class="online"
+                    />
+                  </div>
+                  <div
+                    class="item-text"
+                  >
+                    <span>
+                      18 - Sed sodales congue consequat
+                    </span>
+                    <span
+                      class="sub-text"
+                    >
+                      Total questions: 0
+                    </span>
+                  </div>
+                  <div
+                    class="more-options"
+                  >
+                    <div
+                      class="options"
+                    >
+                      <a>
+                        <svg
+                          class="icon-button icon-button-dark "
+                          height="512pt"
+                          viewBox="0 -192 512 512"
+                          width="512pt"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m320 64c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"
+                          />
+                          <path
+                            d="m128 64c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"
+                          />
+                          <path
+                            d="m512 64c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -418,8 +465,55 @@ Object {
             <ul
               class="data-table-content-no-title"
             >
-              <li>
-                No data found
+              <li
+                class="data-item"
+              >
+                <div
+                  class="item-status"
+                >
+                  <span
+                    class="online"
+                  />
+                </div>
+                <div
+                  class="item-text"
+                >
+                  <span>
+                    18 - Sed sodales congue consequat
+                  </span>
+                  <span
+                    class="sub-text"
+                  >
+                    Total questions: 0
+                  </span>
+                </div>
+                <div
+                  class="more-options"
+                >
+                  <div
+                    class="options"
+                  >
+                    <a>
+                      <svg
+                        class="icon-button icon-button-dark "
+                        height="512pt"
+                        viewBox="0 -192 512 512"
+                        width="512pt"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m320 64c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"
+                        />
+                        <path
+                          d="m128 64c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"
+                        />
+                        <path
+                          d="m512 64c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TButton, TButtonSkin } from '../../types/components/Button';
+import { TButton, TButtonSkin } from './TButton';
 
 import { SAVE, PUBLISH, CANCEL, DELETE, FINISH, LOGIN } from '../../util/constants';
 

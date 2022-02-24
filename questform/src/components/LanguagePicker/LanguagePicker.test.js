@@ -8,11 +8,9 @@ import { render } from '@testing-library/react';
 
 import LangContext from '../../context';
 
-import Header from '../../components/Header/Header';
-import LanguagePicker from '../../components/LanguagePicker/LanguagePicker';
+import LanguagePicker from './LanguagePicker';
 
 import messages from '../../intl/messages';
-import { profileImg } from '../../util/imagesPath';
 
 const updateAppLang = jest.fn();
 const appLang = 'en';
@@ -26,15 +24,9 @@ const Wraper = ({ children }) => (
 test('Check if match with snapshot', () => {
   const header = render(
     <Wraper>
-      <Header
-        profilePicture={profileImg}
-        profileName={'Ricardo Vargas'}
-        languagePicker={
-          <LangContext.Provider value={{ updateAppLang, appLang }}>
-            <LanguagePicker />
-          </LangContext.Provider>
-        }
-      />
+      <LangContext.Provider value={{ updateAppLang, appLang }}>
+        <LanguagePicker />
+      </LangContext.Provider>
     </Wraper>
   );
   expect(header).toMatchSnapshot();

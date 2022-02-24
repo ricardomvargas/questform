@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 
-import { TMenu } from '../../types/components/Menu';
+import { TMenu } from './TMenu';
 
 import { arrowRight } from '../../util/imagesPath';
 

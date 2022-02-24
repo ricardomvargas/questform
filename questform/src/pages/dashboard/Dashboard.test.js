@@ -8,7 +8,7 @@ import { render, act } from '@testing-library/react';
 import axios from 'axios';
 
 import messages from '../../intl/messages';
-import Dashboard from '../../pages/dashboard/Dashboard';
+import Dashboard from './Dashboard';
 
 import { getLastSurveys } from '../../http/surveys';
 

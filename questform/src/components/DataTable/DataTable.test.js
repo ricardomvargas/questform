@@ -6,10 +6,10 @@ import '@testing-library/jest-dom';
 import { IntlProvider } from 'react-intl';
 import { render } from '@testing-library/react';
 
-import DataTable from '../../components/DataTable/DataTable';
+import DataTable from './DataTable';
 
 import messages from '../../intl/messages';
-import { mockSurveysList } from '../mocks/mocks';
+import { mockSurveysList } from '../../__test__/mocks/mocks';
 
 const handleSearchAction = jest.fn();
 const handleFilterAction = jest.fn();

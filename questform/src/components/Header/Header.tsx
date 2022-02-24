@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useIntl } from 'react-intl';
 
-import { THeader } from '../../types/components/Header';
-import { AppLink } from '../../types/components/Menu';
+import { THeader } from './THeader';
+import { AppLink } from '../Menu/TMenu';
 
 import Menu from '../Menu/Menu';
 import { menuIcon } from '../../util/imagesPath';

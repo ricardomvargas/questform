@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
-import { TSurvey } from '../../types/Entities/Survey';
-import { TServerResponseList } from '../../types/Http';
-import { ListItem } from '../../types/components/DataTable';
+import { TSurvey } from '../../http/types/Survey';
+import { TServerResponseList } from '../../http/Thttp';
+import { ListItem } from '../../components/DataTable/TDataTable';
 
 import DataTable from '../../components/DataTable/DataTable';
 import DashBoardCard from '../../components/DashboardCard/DashboardCard';

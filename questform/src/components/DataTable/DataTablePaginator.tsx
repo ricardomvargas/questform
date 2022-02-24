@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useIntl } from 'react-intl';
 
-import { TDataTablePaginator } from '../../types/components/DataTablePaginator';
+import { TDataTablePaginator } from './TDataTablePaginator';
 
 import { getIntegerDivision } from '../../util/util';
 
@@ -114,7 +114,7 @@ const DataTablePaginator = ({
 
   const buildPaginator = () =>
     totalPages > 1 ? (
-      <div className='data-table-footer'>
+      <div className="data-table-footer">
         <ul>
           {buildBackButton()}
           {pageSection ? buildPageButton() : null}

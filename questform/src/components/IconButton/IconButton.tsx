@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TIconButton } from '../../types/components/IconButton';
+import { TIconButton } from './TIconButton';
 
 import {
   ADD,

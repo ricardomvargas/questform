@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TSiteMap, SiteMapOption } from '../../types/components/SiteMap';
+import { TSiteMap, SiteMapOption } from './TSiteMap';
 
 const SiteMap = ({ options }: TSiteMap) => {
   const total = options.length;

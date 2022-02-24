@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-import { TLangContext } from '../types/Contexts';
+import { TLangContext } from './Tcontexts';
 
 const LangContext = createContext<TLangContext>({ appLang: 'en' });
 

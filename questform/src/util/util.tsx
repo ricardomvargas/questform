@@ -1,5 +1,5 @@
 import { IntlShape } from 'react-intl';
-import { TSurvey } from '../types/Entities/Survey';
+import { TSurvey } from '../http/types/Survey';
 
 export const getStatus = (codigo: number) => {
   switch (codigo) {

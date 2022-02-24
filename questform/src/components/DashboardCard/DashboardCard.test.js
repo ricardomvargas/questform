@@ -5,7 +5,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import DashboardCard from '../../components/DashboardCard/DashboardCard';
+import DashboardCard from './DashboardCard';
 
 import { PURPLE } from '../../util/constants';
 

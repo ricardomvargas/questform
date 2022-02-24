@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { TSurveyStatus } from '../../types/components/SurveyStatus';
+import { TSurveyStatus } from './TSurveyStatus';
 
 const SurveyStatus = ({ status, displayShadow }: TSurveyStatus) => {
   const buildClassName = () => {

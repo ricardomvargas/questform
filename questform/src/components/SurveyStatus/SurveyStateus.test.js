@@ -5,23 +5,15 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import SiteMap from '../../components/SiteMap/SiteMap';
-
-const siteMapOptions = [
-  {
-    title: 'Home',
-    description: 'Home',
-    route: '/',
-  },
-];
+import SurveyStatus from './SurveyStatus';
 
 const Wraper = ({ children }) => <div>{children}</div>;
 
 test('Check if match with snapshot', () => {
-  const siteMap = render(
+  const surveyStatus = render(
     <Wraper>
-      <SiteMap options={siteMapOptions} />
+      <SurveyStatus status="online" />
     </Wraper>
   );
-  expect(siteMap).toMatchSnapshot();
+  expect(surveyStatus).toMatchSnapshot();
 });

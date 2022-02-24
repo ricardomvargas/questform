@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TDashboardCard } from '../../types/components/DashboardCard';
+import { TDashboardCard } from './TDashboardCard';
 
 const DashboardCard = ({ skin, title, content, url }: TDashboardCard) => {
   const buildLink = (url: string, content: string) => (

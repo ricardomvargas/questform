@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useIntl } from 'react-intl';
 
-import { TDataTable } from '../../types/components/DataTable';
+import { TDataTable } from './TDataTable';
 
 import DataTablePaginator from './DataTablePaginator';
 import IconButton from '../IconButton/IconButton';

@@ -6,7 +6,7 @@ import '@testing-library/jest-dom';
 import { IntlProvider } from 'react-intl';
 import { render } from '@testing-library/react';
 
-import Menu from '../../components/Menu/Menu';
+import Menu from './Menu';
 
 import messages from '../../intl/messages';
 

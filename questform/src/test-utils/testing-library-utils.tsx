@@ -5,10 +5,10 @@ import { IntlProvider } from 'react-intl';
 
 import messages from '../intl/messages';
 
-const renderWithContext = (childrem: React.ReactNode) =>
+const renderWithContext = (children: React.ReactNode) =>
   render(
     <IntlProvider locale="en" messages={messages.en}>
-      {childrem}
+      {children}
     </IntlProvider>
   );
 

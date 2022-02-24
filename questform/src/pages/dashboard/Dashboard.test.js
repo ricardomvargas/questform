@@ -2,7 +2,8 @@
  * @jest-environment jsdom
  */
 import React from 'react';
-import { render, act } from '../../test-utils/testing-library-utils';
+import { render } from '../../test-utils/testing-library-utils';
+import { waitFor } from '@testing-library/react';
 import axios from 'axios';
 
 import Dashboard from './Dashboard';
@@ -36,12 +37,9 @@ test('Check if match with snapshot', async () => {
   });
 
   const dasboard = render(<Dashboard />);
-  /**
-   * About act:
-   * If the code bellow will not be wraped in the act(), React will be giving a warning in the console saying that the code should
-   * be wrapped with act. This happen because after the promisse be resolved, something in the page will be updated and the test
-   * need to tell React about that, so the request must be wrapped in act();
-   */
-  await act(() => getLastSurveys());
-  expect(dasboard).toMatchSnapshot();
+
+  await waitFor(async () => {
+    await getLastSurveys();
+    expect(dasboard).toMatchSnapshot();
+  });
 });

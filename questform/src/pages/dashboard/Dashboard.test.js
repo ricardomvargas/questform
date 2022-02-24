@@ -2,23 +2,14 @@
  * @jest-environment jsdom
  */
 import React from 'react';
-import { IntlProvider } from 'react-intl';
-import '@testing-library/jest-dom';
-import { render, act } from '@testing-library/react';
+import { render, act } from '../../test-utils/testing-library-utils';
 import axios from 'axios';
 
-import messages from '../../intl/messages';
 import Dashboard from './Dashboard';
 
 import { getLastSurveys } from '../../http/surveys';
 
 jest.mock('axios');
-
-const Wraper = ({ children }) => (
-  <IntlProvider locale="en" messages={messages.en}>
-    {children}
-  </IntlProvider>
-);
 
 test('Check if match with snapshot', async () => {
   axios.get.mockResolvedValue({
@@ -44,7 +35,7 @@ test('Check if match with snapshot', async () => {
     },
   });
 
-  const dasboard = render(<Wraper children={<Dashboard />} />);
+  const dasboard = render(<Dashboard />);
   /**
    * About act:
    * If the code bellow will not be wraped in the act(), React will be giving a warning in the console saying that the code should
